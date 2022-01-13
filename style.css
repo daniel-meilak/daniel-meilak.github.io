@@ -60,44 +60,48 @@ input,button,textarea,select {
 
 /* Navigation bar  */
 
-.navigation {
+header {
   background-color: rgb(107, 1, 1);
-}
-
-nav {
+  display: flex;
   height: 40px;
-  width: fit-content;
+}
+
+.navigation {
+  display: flex;
+
+  max-width: 1344px;
+  width: 100%;
   margin: 0 auto 0px;
+
+  position: relative;
+  flex-grow: 1;
 }
 
-.on-site {
-  float: left;
-}
-
-.socials {
-  float: right;
-}
-
-.socials>ul,
-.on-site>ul {
+.nav-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
+  display: flex;
+
+  /* Centre Vertically */
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-.socials>ul>li,
-.on-site>ul>li {
-  float: left;
-}
+.nav-list a {
 
-.socials>ul>li a,
-.on-site>ul>li a {
-  display: block;
   color: white;
   text-align: center;
   padding: 8px;
   text-decoration: none;
   font-weight: bold;
+}
+
+.nav-list li:nth-of-type(5) {
+  margin-left: auto;
 }
 
 /* Main */
