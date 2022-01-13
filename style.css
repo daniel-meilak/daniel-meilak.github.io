@@ -24,6 +24,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-image: url('images/mountain_background.png');
+  background-size: cover;
   font-family: sans-serif;
 }
 
@@ -56,6 +57,8 @@ input,button,textarea,select {
     scroll-behavior: auto !important;
   }
 }
+
+/* Navigation bar  */
 
 .navigation {
   background-color: rgb(107, 1, 1);
@@ -95,4 +98,39 @@ nav {
   padding: 8px;
   text-decoration: none;
   font-weight: bold;
+}
+
+/* Main */
+
+.main-contents {
+  max-width: 1344px;
+  width: 100%;
+  margin: auto;
+}
+
+main {
+  background-color: rgb(0, 255, 255);
+  width: 66%;
+  float: left;
+
+}
+
+aside {
+  background-color: darkgrey;
+  /* width: calc((100% - (2 * 15px))/3); */
+  width: 34%;
+  float: left;
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width:800px) {
+  main,
+  aside {
+    width: 100%;
+  }
+
+  .socials {
+    display: none;
+  }
 }
