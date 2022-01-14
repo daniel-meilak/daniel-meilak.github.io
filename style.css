@@ -124,10 +124,15 @@ header {
 }
 
 main {
-  background-color: rgb(0, 255, 255);
+  /* background-color: rgb(0, 255, 255); */
   width: 66%;
   float: left;
-
+  outline: yellow;
+  outline-width: 2px;
+  outline-style: dashed;
+  border-radius: 15px;
+  height: 700px;
+  padding: 15px;
 }
 
 aside {
@@ -136,6 +141,7 @@ aside {
   float: left;
   padding: 15px;
   border-radius: 15px;
+  margin-top: 50px;
 
 }
 
