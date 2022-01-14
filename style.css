@@ -88,12 +88,9 @@ header {
   padding: 0;
   width: 100%;
   display: flex;
+  align-items: center;
 
-  /* Centre Vertically */
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  /* background-color: aqua; */
 }
 
 .nav-list a {
@@ -105,9 +102,22 @@ header {
   font-weight: bold;
 }
 
-.nav-list a:hover,
-.nav-list a:focus {
+.nav-list img {
+  height: 30px;
+  width: auto;
+  overflow: hidden;
+  border-radius: 25%;
+  margin-right: 10px;
+}
+
+.nav-link a:hover ,
+.nav-link a:focus {
   background-color: tomato;
+}
+
+.nav-list img:hover,
+.nav-list img:focus {
+  filter: brightness(120%);
 }
 
 .nav-list li:nth-of-type(5) {
