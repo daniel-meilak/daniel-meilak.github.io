@@ -1,3 +1,8 @@
+/* Variables */
+:root {
+  --nav-bar-color: rgb(107, 1, 1);
+}
+
 /* Box sizing rules */
 *,*::before,*::after {
   box-sizing: border-box;
@@ -61,7 +66,7 @@ input,button,textarea,select {
 /* Navigation bar  */
 
 header {
-  background-color: rgb(107, 1, 1);
+  background-color: var(--nav-bar-color);
   display: flex;
   height: 40px;
 }
@@ -100,6 +105,11 @@ header {
   font-weight: bold;
 }
 
+.nav-list a:hover,
+.nav-list a:focus {
+  background-color: tomato;
+}
+
 .nav-list li:nth-of-type(5) {
   margin-left: auto;
 }
@@ -110,6 +120,7 @@ header {
   max-width: 1344px;
   width: 100%;
   margin: auto;
+  padding-top: 20px;
 }
 
 main {
@@ -120,10 +131,34 @@ main {
 }
 
 aside {
-  background-color: darkgrey;
-  /* width: calc((100% - (2 * 15px))/3); */
+  /* background-color: #735982; */
   width: 34%;
   float: left;
+  padding: 15px;
+  border-radius: 15px;
+
+}
+
+img.portrait {
+  /* background-color: tomato; */
+  width: 50%;
+  float: right;
+  border-radius: 40%;
+}
+
+.aside-header {
+  /* background-color: violet; */
+  padding-bottom: 15px;
+  float: left;
+  width: 50%;
+  font-size: 2em;
+  color: rgb(239, 247, 203);
+}
+
+.aside-p {
+  /* background-color: yellow; */
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 /* Responsive Design */
