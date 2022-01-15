@@ -1,6 +1,7 @@
 /* Variables */
 :root {
   --nav-bar-color: rgb(107, 1, 1);
+  --text-color: rgb(239, 247, 203);
 }
 
 /* Box sizing rules */
@@ -30,7 +31,7 @@ body {
   line-height: 1.5;
   background-image: url('images/mountain_background.png');
   background-size: cover;
-  font-family: sans-serif;
+  font-family: open sans;
 }
 
 /* A elements that don't have a class get default styles */
@@ -145,13 +146,38 @@ main {
   /* background-color: rgb(0, 255, 255); */
   width: 66%;
   float: left;
-  outline: yellow;
+  /* outline: yellow;
   outline-width: 2px;
-  outline-style: dashed;
+  outline-style: dashed; */
   border-radius: 15px;
   height: 700px;
-  padding: 15px;
+  padding: 30px;
+
+  background-color: #49406e83;
 }
+
+.main-header {
+  color: var(--text-color);
+  font-size: 3em;
+  padding-left: 10%;
+  margin-top: -25px;
+  /* background-color: wheat; */
+}
+
+.main-p {
+  color: var(--text-color);
+  padding-top: 25px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.recommend{
+  height: 400px;
+  /* background-color: violet; */
+  margin-top: 20px;
+}
+
+/* Aside */
 
 aside {
   /* background-color: #735982; */
@@ -176,13 +202,15 @@ img.portrait {
   float: left;
   width: 50%;
   font-size: 2em;
-  color: rgb(239, 247, 203);
+  color: var(--text-color);
 }
 
 .aside-p {
   /* background-color: yellow; */
   font-size: 1.2em;
   font-weight: bold;
+  color: var(--text-color);
+  padding-bottom: 8px;
 }
 
 /* Responsive Design */
@@ -192,8 +220,15 @@ img.portrait {
   aside {
     width: 100%;
   }
+}
 
-  .socials {
+@media only screen and (max-width:500px) {
+  main,
+  aside {
+    width: 100%;
+  }
+
+  .nav-list li:nth-last-child(-n+3) {
     display: none;
   }
 }
