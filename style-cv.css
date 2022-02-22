@@ -1,0 +1,59 @@
+/* Variables */
+:root {
+   --text-color: rgb(239, 247, 203);
+   --link-color: #131199;
+   --h2-color: #ca5a74;
+ }
+
+h1 {
+   color: var(--text-color);
+   font-size: 20px;
+}
+
+h2 {
+   color: var(--h2-color);
+   font-size: 20px;
+   margin-top: 25px;
+}
+
+h3 {
+   color: var(--text-color);
+   font-size: 16px;
+}
+
+h5 {
+   color: grey;
+   font-size: 12px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+
+h6 {
+   color: lightgrey;
+   font-size: 13px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+
+p {
+   color: var(--text-color);
+   font-size: 14px;
+}
+
+.cv-header {
+   display: flex;
+   justify-content: space-between;
+}
+
+.header-links {
+   margin-top: 20px;
+}
+
+.cv-header a {
+   color: var(--link-color);
+   font-size: 12px;
+}
+
+li::marker {
+   color: var(--text-color);
+}

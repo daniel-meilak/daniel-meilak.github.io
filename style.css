@@ -149,11 +149,9 @@ main {
   /* outline: yellow;
   outline-width: 2px;
   outline-style: dashed; */
-  border-radius: 15px;
-  height: 700px;
+  /* border-radius: 15px; */
   padding: 30px;
-
-  background-color: #49406e83;
+  background-color: #49406eaf;
 }
 
 .main-header {
