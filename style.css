@@ -31,6 +31,8 @@ body {
   line-height: 1.5;
   background-image: url('images/mountain_background.png');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: open sans;
 }
 
